@@ -1,0 +1,45 @@
+/* NAVBAR */
+nav {
+  width: 100%;
+  display: flex;
+  padding: 1.5em 3.375em;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-slate-200);
+  border-bottom: 1px solid var(--color-slate-400);
+}
+
+.left-nav-section {
+  display: flex;
+  gap: 4em;
+  align-items: center;
+}
+
+.right-nav-section {
+  display: flex;
+  gap: 1.3em;
+  align-items: center;
+}
+
+.branding {
+  display: flex;
+  gap: 0.2em;
+  align-items: center;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.profile-nav-section {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 2em;
+  height: 2em;
+  border-radius: 99px;
+}

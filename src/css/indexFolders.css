@@ -1,0 +1,16 @@
+.index-folders {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1.25em 40px;
+}
+
+.index-folders-header {
+  display: flex;
+  gap: 1em;
+  color: var(--color-slate-400);
+}
+
+.index-folders .active {
+  color: var(--color-blue-800);
+}
