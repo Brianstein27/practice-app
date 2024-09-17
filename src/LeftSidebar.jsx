@@ -3,7 +3,8 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 import LibraryMusicIcon from "@mui/icons-material/LibraryMusic";
 import CreateNewFolderIcon from "@mui/icons-material/CreateNewFolder";
-import './css/sidebar.css'
+import mockState from "./MockState";
+import "./css/sidebar.css";
 
 function Folder({ icon, name }) {
   return (
@@ -26,10 +27,9 @@ function FolderTree() {
             <CreateNewFolderIcon />
             <span>New folder</span>
           </div>
-          <Folder name="Folder" />
-          <Folder name="Folder" />
-          <Folder name="Folder" />
-          <Folder name="Folder" />
+          {mockState.folders.plans.map((folder) => {
+            return <Folder name={folder} />;
+          })}
         </div>
       </div>
       <div className="folder-section">
@@ -42,10 +42,9 @@ function FolderTree() {
             <CreateNewFolderIcon />
             <span>New folder</span>
           </div>
-          <Folder name="Folder" />
-          <Folder name="Folder" />
-          <Folder name="Folder" />
-          <Folder name="Folder" />
+          {mockState.folders.exercises.map((folder) => {
+            return <Folder name={folder} />;
+          })}
         </div>
       </div>
       <div className="folder-heading">
